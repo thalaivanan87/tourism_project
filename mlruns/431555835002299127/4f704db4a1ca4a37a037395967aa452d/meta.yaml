@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/4f704db4a1ca4a37a037395967aa452d/artifacts
+end_time: 1759680898744
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 4f704db4a1ca4a37a037395967aa452d
+run_name: sincere-midge-928
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759680655758
+status: 3
+tags: []
+user_id: root
