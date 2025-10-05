@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/db5ac2e743d14bd1a6b2a1ad26fa8edd/artifacts
+end_time: 1759686723929
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: db5ac2e743d14bd1a6b2a1ad26fa8edd
+run_name: youthful-bat-801
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759686447873
+status: 3
+tags: []
+user_id: root
