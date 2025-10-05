@@ -4,31 +4,56 @@ from pathlib import Path
 import streamlit as st
 import pandas as pd
 import joblib
-from huggingface_hub import hf_hub_download, snapshot_download
+from huggingface_hub import hf_hub_download
 
-# Configuration (override via env vars if needed)
+# Config (can override via env vars if you prefer)
 MODEL_REPO = os.getenv("HF_MODEL_REPO", "thalaivanan/tourism_model")
 MODEL_FILENAME = os.getenv("HF_MODEL_FILENAME", "best_tourism_model_v1.joblib")
+# default relative local path (we will compute absolute path at runtime)
+DEFAULT_LOCAL_REL = f"tourism_project/models/{MODEL_FILENAME}"
 
-# Default absolute path for Colab / typical notebook runs.
-# Override by setting LOCAL_MODEL_PATH env var (recommended in Colab before starting Streamlit).
-DEFAULT_PROJECT_ROOT = Path("/content/tourism_project")  # change if your project root differs
-DEFAULT_LOCAL_MODEL = DEFAULT_PROJECT_ROOT / "models" / MODEL_FILENAME
-LOCAL_MODEL_PATH = Path(os.getenv("LOCAL_MODEL_PATH", str(DEFAULT_LOCAL_MODEL)))
+def load_model():
+    """
+    Try local model first (LOCAL_MODEL_PATH env or DEFAULT_LOCAL_REL),
+    then try HF Hub (use HUGGINGFACE_HUB_TOKEN env if set).
+    Raises RuntimeError with clear message on failure.
+    """
+    # determine local path at call time (this allows setting env var from UI before Predict)
+    local_path_str = os.getenv("LOCAL_MODEL_PATH", DEFAULT_LOCAL_REL)
+    local_path = Path(local_path_str)
+    # prefer absolute path relative to working dir if not absolute
+    if not local_path.is_absolute():
+        # try resolve relative to common Colab path /content first
+        candidate = Path("/content") / local_path
+        if candidate.exists():
+            local_path = candidate
+        else:
+            # fallback to the given relative path (so it still works locally)
+            local_path = Path(local_path_str)
 
-# Optional: allow user to tweak classification threshold via env var
-CLASSIFICATION_THRESHOLD = float(os.getenv("CLASSIFICATION_THRESHOLD", 0.45))
+    # 1) try local
+    if local_path.exists():
+        try:
+            return joblib.load(local_path)
+        except Exception as e:
+            raise RuntimeError(f"Found local model at {local_path} but failed to load: {e}")
 
-st.set_page_config(page_title="Tourism Booking Prediction")
+    # 2) try HF Hub (use token if provided in env)
+    hf_token = os.getenv("HUGGINGFACE_HUB_TOKEN", os.getenv("HF_TOKEN", None))
+    try:
+        model_file = hf_hub_download(repo_id=MODEL_REPO, filename=MODEL_FILENAME, token=hf_token)
+        return joblib.load(model_file)
+    except Exception as e:
+        # surface a clear error that includes the cause (but not tokens)
+        raise RuntimeError(
+            f"Could not load model from local ({local_path}) or HF repo ({MODEL_REPO}). "
+            f"Last error: {e}"
+        )
 
 st.title("Tourism Booking Prediction")
-st.markdown(
-    """
-Enter the guest and pitch details below and click **Predict** to get the booking prediction and probability.
-"""
-)
+st.markdown("Enter guest and pitch details and click **Predict** to get a booking prediction and probability.")
 
-# Build input UI
+# --- Inputs (unchanged)
 age = st.number_input("Age", min_value=0, max_value=120, value=35)
 city_tier = st.number_input("City Tier", min_value=1, max_value=3, value=2)
 duration_of_pitch = st.number_input("Duration Of Pitch (minutes)", min_value=0.0, value=5.0, step=0.5)
@@ -67,73 +92,44 @@ input_df = pd.DataFrame([{
 st.write("Input preview:")
 st.table(input_df)
 
-# CACHED loader so model loads only once per process
-@st.cache_data(show_spinner=False)
-def load_model_cached(local_path: str, hf_repo: str, hf_filename: str, hf_token: str = None):
-    """
-    Attempt to load model:
-      1) from absolute local_path (if present)
-      2) from HF single-file download (hf_hub_download) using hf_token if provided
-      3) snapshot_download entire repo and search for filename inside snapshot
-    Returns loaded model or raises RuntimeError.
-    """
-    # 1) local
-    lp = Path(local_path)
-    if lp.exists():
-        try:
-            model = joblib.load(lp)
-            return model
-        except Exception as e:
-            raise RuntimeError(f"Found local model at {lp} but failed to load: {e}")
+st.markdown("---")
+st.markdown("### Model options (use one of these if loading fails)")
+col1, col2 = st.columns(2)
 
-    # 2) HF single-file download
-    try:
-        if hf_token:
-            model_file = hf_hub_download(repo_id=hf_repo, filename=hf_filename, token=hf_token)
-        else:
-            model_file = hf_hub_download(repo_id=hf_repo, filename=hf_filename)
-        model = joblib.load(model_file)
-        return model
-    except Exception as e_hf:
-        # 3) fallback: snapshot and search inside
-        try:
-            snapshot_dir = snapshot_download(repo_id=hf_repo, token=hf_token)
-            candidate = Path(snapshot_dir) / hf_filename
-            if candidate.exists():
-                model = joblib.load(candidate)
-                return model
-            # maybe the file is nested - try to walk snapshot_dir
-            for p in Path(snapshot_dir).rglob(hf_filename):
-                try:
-                    return joblib.load(p)
-                except Exception:
-                    continue
-            raise RuntimeError(f"HF snapshot found but '{hf_filename}' not present. Snapshot dir: {snapshot_dir}")
-        except Exception as final_e:
-            # propagate a clear message
-            raise RuntimeError(f"Could not load model from local ({lp}) or HF repo ({hf_repo}). Last error: {final_e}") from final_e
+with col1:
+    uploaded = st.file_uploader("Upload local model (.joblib or .pkl)", type=["joblib", "pkl"], key="model_upload")
+    if uploaded is not None:
+        # save uploaded file into models folder and set LOCAL_MODEL_PATH for this session
+        models_dir = Path("/content/tourism_project/models")
+        models_dir.mkdir(parents=True, exist_ok=True)
+        dst = models_dir / MODEL_FILENAME
+        with open(dst, "wb") as f:
+            f.write(uploaded.getbuffer())
+        # set env var for this process so load_model() will pick it up
+        os.environ["LOCAL_MODEL_PATH"] = str(dst)
+        st.success(f"Uploaded model and set LOCAL_MODEL_PATH -> {dst}")
 
-def get_hf_token():
-    # prefer HUGGINGFACE_HUB_TOKEN; fall back to HF_TOKEN for compatibility
-    return os.getenv("HUGGINGFACE_HUB_TOKEN", os.getenv("HF_TOKEN", None))
+with col2:
+    hf_token_input = st.text_input("Hugging Face token (if repo private)", type="password", help="Paste a HF token only for this session; don't hard-code it.")
+    if hf_token_input:
+        # store in env for load_model to use during this session (not persisted)
+        os.environ["HUGGINGFACE_HUB_TOKEN"] = hf_token_input
+        st.success("HF token set for this session (will be used for HF downloads).")
 
+# Prediction
 if st.button("Predict"):
-    with st.spinner("Loading model..."):
-        try:
-            model = load_model_cached(str(LOCAL_MODEL_PATH), MODEL_REPO, MODEL_FILENAME, get_hf_token())
-        except Exception as e:
-            st.error(f"Failed to load model: {e}")
-            st.info(
-                "Fixes: upload the model file to the models/ folder, or set LOCAL_MODEL_PATH env var to the absolute path, "
-                "or set HUGGINGFACE_HUB_TOKEN for private HF repos. (Don't put tokens directly in the notebook.)"
-            )
-            st.stop()
-
-    # perform prediction using the model (supports either predict_proba or predict)
     try:
+        model = load_model()
+    except Exception as e:
+        st.error(f"Failed to load model: {e}")
+        st.info("Fixes: (1) Upload the .joblib model above, or (2) paste a Hugging Face token (if the HF repo is private), "
+                "or set LOCAL_MODEL_PATH env var to the absolute path of your model before starting Streamlit.")
+    else:
+        # model is expected to be a pipeline that accepts DataFrame
         if hasattr(model, "predict_proba"):
             prob = model.predict_proba(input_df)[:, 1][0]
-            pred = int(prob >= CLASSIFICATION_THRESHOLD)
+            thresh = float(os.getenv("CLASSIFICATION_THRESHOLD", 0.45))
+            pred = int(prob >= thresh)
             label = "Booked" if pred == 1 else "Not Booked"
             st.subheader("Prediction")
             st.write(f"Prediction: **{label}**")
@@ -143,5 +139,3 @@ if st.button("Predict"):
             label = "Booked" if int(pred) == 1 else "Not Booked"
             st.subheader("Prediction")
             st.write(f"Prediction: **{label}**")
-    except Exception as pred_e:
-        st.error(f"Model loaded but prediction failed: {pred_e}")
