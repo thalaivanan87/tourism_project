@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/cfaf153421964fee9c89c12b8f6a1701/artifacts
+end_time: 1759681771966
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: cfaf153421964fee9c89c12b8f6a1701
+run_name: monumental-horse-540
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759681524441
+status: 3
+tags: []
+user_id: root
