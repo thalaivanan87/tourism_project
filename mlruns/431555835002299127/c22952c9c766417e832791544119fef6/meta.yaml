@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/c22952c9c766417e832791544119fef6/artifacts
+end_time: 1759639066661
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: c22952c9c766417e832791544119fef6
+run_name: fortunate-donkey-157
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639066038
+status: 3
+tags: []
+user_id: root

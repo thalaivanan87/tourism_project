@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/241a1e8b9d5247d1809abf85bc41ee8b/artifacts
+end_time: 1759651767781
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 241a1e8b9d5247d1809abf85bc41ee8b
+run_name: calm-calf-602
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651767166
+status: 3
+tags: []
+user_id: root

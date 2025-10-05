@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/6bce559bbc7b4ed8beb7a9b5b338b21b/artifacts
+end_time: 1759651746754
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 6bce559bbc7b4ed8beb7a9b5b338b21b
+run_name: youthful-newt-867
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651746137
+status: 3
+tags: []
+user_id: root

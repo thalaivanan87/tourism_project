@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/de66dec1f7834a44a42f2d4f4dc9edd2/artifacts
+end_time: 1759639476211
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: de66dec1f7834a44a42f2d4f4dc9edd2
+run_name: orderly-shoat-555
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639475591
+status: 3
+tags: []
+user_id: root

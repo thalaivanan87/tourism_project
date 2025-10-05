@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/615553d16c954b45a6d8aff5b7c21ffa/artifacts
+end_time: 1759639491954
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 615553d16c954b45a6d8aff5b7c21ffa
+run_name: suave-cub-434
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639491334
+status: 3
+tags: []
+user_id: root

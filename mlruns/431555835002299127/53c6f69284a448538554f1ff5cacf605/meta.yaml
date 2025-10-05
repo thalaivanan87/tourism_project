@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/53c6f69284a448538554f1ff5cacf605/artifacts
+end_time: 1759651757400
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 53c6f69284a448538554f1ff5cacf605
+run_name: secretive-mule-54
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651756412
+status: 3
+tags: []
+user_id: root

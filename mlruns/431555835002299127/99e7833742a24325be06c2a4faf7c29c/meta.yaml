@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/99e7833742a24325be06c2a4faf7c29c/artifacts
+end_time: 1759639060459
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 99e7833742a24325be06c2a4faf7c29c
+run_name: aged-stag-255
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639059803
+status: 3
+tags: []
+user_id: root

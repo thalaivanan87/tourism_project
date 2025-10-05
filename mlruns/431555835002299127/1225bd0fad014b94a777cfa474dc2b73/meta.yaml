@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/1225bd0fad014b94a777cfa474dc2b73/artifacts
+end_time: 1759639491179
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 1225bd0fad014b94a777cfa474dc2b73
+run_name: upset-panda-551
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639490549
+status: 3
+tags: []
+user_id: root

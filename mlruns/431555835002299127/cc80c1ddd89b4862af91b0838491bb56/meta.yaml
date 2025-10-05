@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/cc80c1ddd89b4862af91b0838491bb56/artifacts
+end_time: 1759651764571
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: cc80c1ddd89b4862af91b0838491bb56
+run_name: defiant-fly-932
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651763866
+status: 3
+tags: []
+user_id: root

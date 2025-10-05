@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/771f62499bfb40ab9dd53a5381ca9bdc/artifacts
+end_time: 1759639084142
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 771f62499bfb40ab9dd53a5381ca9bdc
+run_name: beautiful-wasp-265
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639083488
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/8ad6b79acfc24353b031f1c98d500184/artifacts
+end_time: 1759651758171
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 8ad6b79acfc24353b031f1c98d500184
+run_name: sedate-jay-396
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651757555
+status: 3
+tags: []
+user_id: root

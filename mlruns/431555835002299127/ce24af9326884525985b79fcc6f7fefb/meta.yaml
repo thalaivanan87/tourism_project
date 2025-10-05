@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/ce24af9326884525985b79fcc6f7fefb/artifacts
+end_time: 1759639061237
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: ce24af9326884525985b79fcc6f7fefb
+run_name: grandiose-skink-446
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639060616
+status: 3
+tags: []
+user_id: root

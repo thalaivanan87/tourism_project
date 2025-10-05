@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/6f08e29e621947d5a367dde97c1bd7c4/artifacts
+end_time: 1759639479337
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 6f08e29e621947d5a367dde97c1bd7c4
+run_name: whimsical-mule-601
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639478717
+status: 3
+tags: []
+user_id: root

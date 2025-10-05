@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/53855c5103eb4a20b54301b806e92d11/artifacts
+end_time: 1759651772445
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 53855c5103eb4a20b54301b806e92d11
+run_name: unleashed-shoat-588
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651771834
+status: 3
+tags: []
+user_id: root

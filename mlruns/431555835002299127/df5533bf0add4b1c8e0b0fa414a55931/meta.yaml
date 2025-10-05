@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/df5533bf0add4b1c8e0b0fa414a55931/artifacts
+end_time: 1759651744783
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: df5533bf0add4b1c8e0b0fa414a55931
+run_name: debonair-rook-861
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651744124
+status: 3
+tags: []
+user_id: root

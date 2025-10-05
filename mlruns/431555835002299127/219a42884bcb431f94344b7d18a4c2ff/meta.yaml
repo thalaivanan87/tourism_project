@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/219a42884bcb431f94344b7d18a4c2ff/artifacts
+end_time: 1759639473051
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 219a42884bcb431f94344b7d18a4c2ff
+run_name: whimsical-newt-697
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639472402
+status: 3
+tags: []
+user_id: root

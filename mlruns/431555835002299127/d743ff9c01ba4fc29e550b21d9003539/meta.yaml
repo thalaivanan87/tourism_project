@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/d743ff9c01ba4fc29e550b21d9003539/artifacts
+end_time: 1759639073260
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: d743ff9c01ba4fc29e550b21d9003539
+run_name: loud-foal-126
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639072593
+status: 3
+tags: []
+user_id: root

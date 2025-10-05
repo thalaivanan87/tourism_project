@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/47c6040a0f1e4dc6a612c2409fb3b8bb/artifacts
+end_time: 1759639483383
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 47c6040a0f1e4dc6a612c2409fb3b8bb
+run_name: merciful-zebra-913
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639482735
+status: 3
+tags: []
+user_id: root

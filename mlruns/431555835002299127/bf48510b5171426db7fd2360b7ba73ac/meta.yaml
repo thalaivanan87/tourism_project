@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/bf48510b5171426db7fd2360b7ba73ac/artifacts
+end_time: 1759639082552
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: bf48510b5171426db7fd2360b7ba73ac
+run_name: rumbling-crane-42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639081939
+status: 3
+tags: []
+user_id: root

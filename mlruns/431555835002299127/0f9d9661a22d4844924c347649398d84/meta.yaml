@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/0f9d9661a22d4844924c347649398d84/artifacts
+end_time: 1759651754703
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 0f9d9661a22d4844924c347649398d84
+run_name: bright-shrike-666
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651754085
+status: 3
+tags: []
+user_id: root

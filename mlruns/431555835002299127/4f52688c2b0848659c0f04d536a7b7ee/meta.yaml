@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/4f52688c2b0848659c0f04d536a7b7ee/artifacts
+end_time: 1759639484180
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 4f52688c2b0848659c0f04d536a7b7ee
+run_name: legendary-trout-482
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639483544
+status: 3
+tags: []
+user_id: root

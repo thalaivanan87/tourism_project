@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/7cbef444ae7d4354aa3e0f48d807f0e8/artifacts
+end_time: 1759639486501
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 7cbef444ae7d4354aa3e0f48d807f0e8
+run_name: peaceful-gnu-658
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639485884
+status: 3
+tags: []
+user_id: root

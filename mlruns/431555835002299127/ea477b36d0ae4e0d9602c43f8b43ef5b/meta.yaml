@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/ea477b36d0ae4e0d9602c43f8b43ef5b/artifacts
+end_time: 1759651769365
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: ea477b36d0ae4e0d9602c43f8b43ef5b
+run_name: casual-mare-282
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651768748
+status: 3
+tags: []
+user_id: root

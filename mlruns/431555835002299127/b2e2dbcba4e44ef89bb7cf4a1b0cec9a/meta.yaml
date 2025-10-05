@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/b2e2dbcba4e44ef89bb7cf4a1b0cec9a/artifacts
+end_time: 1759639068206
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: b2e2dbcba4e44ef89bb7cf4a1b0cec9a
+run_name: luminous-elk-420
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639067589
+status: 3
+tags: []
+user_id: root

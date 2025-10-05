@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/8180122df07a4e878ab5be6c57b5d60d/artifacts
+end_time: 1759651745970
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 8180122df07a4e878ab5be6c57b5d60d
+run_name: orderly-bird-917
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651744940
+status: 3
+tags: []
+user_id: root

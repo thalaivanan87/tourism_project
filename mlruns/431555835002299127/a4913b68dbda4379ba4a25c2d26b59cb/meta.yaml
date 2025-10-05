@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/a4913b68dbda4379ba4a25c2d26b59cb/artifacts
+end_time: 1759639064342
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: a4913b68dbda4379ba4a25c2d26b59cb
+run_name: dashing-bee-772
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639063725
+status: 3
+tags: []
+user_id: root

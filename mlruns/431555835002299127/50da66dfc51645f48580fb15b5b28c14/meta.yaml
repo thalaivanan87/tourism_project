@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/50da66dfc51645f48580fb15b5b28c14/artifacts
+end_time: 1759639495977
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 50da66dfc51645f48580fb15b5b28c14
+run_name: overjoyed-perch-700
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639495320
+status: 3
+tags: []
+user_id: root

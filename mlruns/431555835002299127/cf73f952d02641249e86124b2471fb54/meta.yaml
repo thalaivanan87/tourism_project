@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/cf73f952d02641249e86124b2471fb54/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: cf73f952d02641249e86124b2471fb54
+run_name: sincere-quail-759
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651774128
+status: 1
+tags: []
+user_id: root

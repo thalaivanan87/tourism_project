@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/1f976f40ab984297baaaf51ef0f0a543/artifacts
+end_time: 1759639080247
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 1f976f40ab984297baaaf51ef0f0a543
+run_name: dazzling-goat-399
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639079624
+status: 3
+tags: []
+user_id: root

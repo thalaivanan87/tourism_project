@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/646e3cc95684454a816865542dcfe6ba/artifacts
+end_time: 1759639478562
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 646e3cc95684454a816865542dcfe6ba
+run_name: incongruous-seal-948
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639477943
+status: 3
+tags: []
+user_id: root

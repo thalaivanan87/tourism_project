@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/de0c94bad8714789ae3008df0e89df2d/artifacts
+end_time: 1759639062014
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: de0c94bad8714789ae3008df0e89df2d
+run_name: carefree-gnat-424
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639061391
+status: 3
+tags: []
+user_id: root

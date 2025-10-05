@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/b61033f158ff416cadc0bb2ecb8fcb73/artifacts
+end_time: 1759651768594
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: b61033f158ff416cadc0bb2ecb8fcb73
+run_name: beautiful-grouse-785
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651767936
+status: 3
+tags: []
+user_id: root

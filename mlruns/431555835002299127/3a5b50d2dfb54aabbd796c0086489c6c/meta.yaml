@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/3a5b50d2dfb54aabbd796c0086489c6c/artifacts
+end_time: 1759651759711
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 3a5b50d2dfb54aabbd796c0086489c6c
+run_name: industrious-fish-900
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759651759096
+status: 3
+tags: []
+user_id: root

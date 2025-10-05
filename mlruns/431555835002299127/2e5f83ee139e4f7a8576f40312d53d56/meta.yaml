@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/2e5f83ee139e4f7a8576f40312d53d56/artifacts
+end_time: 1759639063569
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 2e5f83ee139e4f7a8576f40312d53d56
+run_name: amusing-boar-990
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639062952
+status: 3
+tags: []
+user_id: root

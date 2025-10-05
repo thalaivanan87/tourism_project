@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/9cdf79ca1f234509a0353df88f598a22/artifacts
+end_time: 1759639498361
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 9cdf79ca1f234509a0353df88f598a22
+run_name: agreeable-flea-698
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639497739
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/1845dbd130374f4b8a6bc53c3fb4dc94/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 1845dbd130374f4b8a6bc53c3fb4dc94
+run_name: silent-pug-226
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639088262
+status: 1
+tags: []
+user_id: root

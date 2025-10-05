@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/c8032f1d53ce4931965d0448a1f1e6bd/artifacts
+end_time: 1759639476988
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: c8032f1d53ce4931965d0448a1f1e6bd
+run_name: stylish-shrew-846
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639476366
+status: 3
+tags: []
+user_id: root

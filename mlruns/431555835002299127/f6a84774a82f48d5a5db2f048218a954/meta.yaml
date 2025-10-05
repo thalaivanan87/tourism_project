@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/f6a84774a82f48d5a5db2f048218a954/artifacts
+end_time: 1759639069004
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: f6a84774a82f48d5a5db2f048218a954
+run_name: able-newt-269
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639068360
+status: 3
+tags: []
+user_id: root

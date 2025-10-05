@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/ff61051d0b8248d38ddae3f5895c6d97/artifacts
+end_time: 1759639062791
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: ff61051d0b8248d38ddae3f5895c6d97
+run_name: bouncy-lamb-771
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639062167
+status: 3
+tags: []
+user_id: root

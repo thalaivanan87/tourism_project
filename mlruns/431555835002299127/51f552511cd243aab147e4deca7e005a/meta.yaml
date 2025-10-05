@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/51f552511cd243aab147e4deca7e005a/artifacts
+end_time: 1759639480918
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 51f552511cd243aab147e4deca7e005a
+run_name: handsome-bear-3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639480282
+status: 3
+tags: []
+user_id: root

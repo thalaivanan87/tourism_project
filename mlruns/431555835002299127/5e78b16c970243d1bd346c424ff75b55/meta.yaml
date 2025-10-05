@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/5e78b16c970243d1bd346c424ff75b55/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 5e78b16c970243d1bd346c424ff75b55
+run_name: capricious-skunk-672
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639498522
+status: 1
+tags: []
+user_id: root

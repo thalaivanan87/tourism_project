@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/431555835002299127/992e3bc21a9b47c6b99649bfa71f446c/artifacts
+end_time: 1759639088107
+entry_point_name: ''
+experiment_id: '431555835002299127'
+lifecycle_stage: active
+run_id: 992e3bc21a9b47c6b99649bfa71f446c
+run_name: intrigued-vole-157
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759639087491
+status: 3
+tags: []
+user_id: root
